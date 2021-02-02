@@ -1,11 +1,3 @@
-<!-- MUST TYPE THIS IS BELOW BY HAND OR IT WONT WORK
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    browser-sync start --server --directory --files "*" ("**/*" for all folders/files in directory)
-    OR USE
-    http://localhost:3000/index.html
-    
-    PUSH to GH for the server to work!!!!!!!!!!!!!
--->
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -44,7 +36,7 @@
                 <input type="text" id="txtLastname" name="txtLastname" required>
                 </p>
 
-                <p>
+                <div>
                     <fieldset>
                         <legend>Gender:</legend>
                         <input type="radio" id="rbMale" name="gender" value="male">
@@ -59,7 +51,7 @@
                         <input type="radio" id="rbPreferNo" name="gender" value="PreferNo">
                         <label for="rbPreferNo">Prefer Not to Answer</label>
                     </fieldset>
-                </p>
+                </div>
 
                 <p>
                     <label for="txtTel">Telephone: </label>
@@ -242,7 +234,7 @@
                     </select>
                 </p>
 
-                <p>
+                <div>
                     <fieldset>
                         <label for="ddCountry">
                             <span>
@@ -264,7 +256,7 @@
                             </label>
                         </div>
                     </fieldset>
-                </p>
+                </div>
 
                 <p>
                     <label for="ddSocial">
