@@ -1,0 +1,14 @@
+legend{
+  color: white;
+  padding: 5px 10px;
+}
+
+fieldset{
+  color: black;
+}
+
+.gender{
+  height: 10em;
+  display: flex;
+  align-items: center;
+}
