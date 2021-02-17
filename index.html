@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<!--
-span color for red astrict 
-<span style="font-weight: bold; color:red">*</span>
-
-   MUST TYPE THIS IS BELOW BY HAND OR IT WONT WORK
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    browser-sync start --server --directory --files "*"
-
--->
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -68,7 +58,7 @@ span color for red astrict
               <!--Phone-->
               
                 <div style="white-space: nowrap;" class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                  <label for="txtTel" class="col-sm-2 col-form-label">
+                  <label id="txtTel" class="col-sm-2 col-form-label">
                     <span>Telephone:</span>
                   </label>
                 </div>
@@ -79,25 +69,22 @@ span color for red astrict
 
               <!--Email-->
                 <div style=" white-space: nowrap;" class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                  <label for="txtTel" class="col-sm-2 col-form-label">
+                  <label id="txtEmail" class="col-sm-2 col-form-label">
                     <span>Email:</span>
                   </label>
                 </div>
                 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                  <input type="email" id="txtEmail" name="txtEmail" class="form-control" placeholder="name@examle.com" required>
+                  <input type="email" id="txtEmailinput" name="txtEmail" class="form-control" placeholder="name@examle.com" required>
                 </div>
             </div>
 
             <div class="w-auto form-group row">
 
               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                <div>
-                  <legend class="col-lg-12 col-md-3 col-sm-6 col-xs-6 col-form-label">
+                  <div class="col-lg-12 col-md-3 col-sm-6 col-xs-6 col-form-label">
                   <span>Gender:</span> 
-                  </legend>
-                </div>
-                
+                  </div>                
               </div>
 
               <!--Radio Buttons-->
@@ -108,8 +95,7 @@ span color for red astrict
                   </div>
 
                   <div class="form-check">
-                    <input
-                      type="radio"id="rbFemale"name="gender"value="female" class="form-check-input"/>
+                    <input type="radio" id="rbFemale" name="gender" value="female" class="form-check-input"/>
                     <label for="rbFemale">Female</label>
                   </div>
 
@@ -120,7 +106,7 @@ span color for red astrict
 
                   <div class="form-check">
                     <input
-                      type="radio" id="rbPreferNo" name="gender"value="PreferNo"class="form-check-input"/>
+                      type="radio" id="rbPreferNo" name="gender" value="PreferNo" class="form-check-input"/>
                     <label for="rbPreferNo">Prefer Not to Answer</label>
                   </div>
               </div>
@@ -175,27 +161,28 @@ span color for red astrict
             <br>
 
             <div class="row form-group">
-              <div id="wrap" style="text-align: center; white-space: nowrap;" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
                 <label for="ddFever" class="col-sm-2 col-form-label">
                   <span>Fever or Chills</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
+              <div  class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
                 <select id="ddFever" name="ddFever" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
               </div>
             
-              <div id="wrap" style="text-align: center; white-space: nowrap"  class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
                 <label for="ddCough" class="col-sm-2 col-form-label">
                   <span>Cough</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select style="text-align:middle" id="ddCough" name="ddCough" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                <select style="text-align:center" id="ddCough" name="ddCough" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -203,27 +190,27 @@ span color for red astrict
             </div>
             
             <div class="row form-group">
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddFever" class="col-sm-2 col-form-label">
+              <div style="white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddBreathing" class="col-sm-2 col-form-label">
                   <span>Shortness of breath of difficulty breathing</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
-                <select id="ddFever" name="ddFever" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
+                <select id="ddBreathing" name="ddFever" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
               </div>
             
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddCough" class="col-sm-2 col-form-label">
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddFatigue" class="col-sm-2 col-form-label">
                   <span>Fatigue</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select id="ddCough" name="ddCough" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                <select id="ddFatigue" name="ddCough" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -231,27 +218,27 @@ span color for red astrict
             </div>
 
             <div class="row form-group">
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddFever" class="col-sm-2 col-form-label">
+              <div style="white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddMuscleFever" class="col-sm-2 col-form-label">
                   <span>Muscle or body aches</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
-                <select id="ddFever" name="ddFever" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
+                <select id="ddMuscleFever" name="ddFever" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
               </div>
             
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddCough" class="col-sm-2 col-form-label">
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddHeadache" class="col-sm-2 col-form-label">
                   <span>Headache</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select id="ddCough" name="ddCough" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                <select id="ddHeadache" name="ddCough" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -259,28 +246,28 @@ span color for red astrict
             </div>
 
             <div class="row form-group">
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddFever" class="col-sm-2 col-form-label">
+              <div style="white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddTaste" class="col-sm-2 col-form-label">
                   <span>New loss of taste or smell</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select id="ddFever" name="ddFever" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                <select id="ddTaste" name="ddFever" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
               </div>
             
             
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddCough" class="col-sm-2 col-form-label">
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddSoreThroat" class="col-sm-2 col-form-label">
                   <span>Sore throat</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select id="ddCough" name="ddCough" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                <select id="ddSoreThroat" name="ddCough" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -289,27 +276,27 @@ span color for red astrict
 
 
             <div class="row form-group">
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddFever" class="col-sm-2 col-form-label">
+              <div style="white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddNose" class="col-sm-2 col-form-label">
                   <span>Congestion or runny nose</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
-                <select id="ddFever" name="ddFever" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
+                <select id="ddNose" name="ddFever" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
               </div>
             
-              <div id="wrap" style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddCough" class="col-sm-2 col-form-label">
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddNausea" class="col-sm-2 col-form-label">
                   <span>Nausea or vomiting </span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select id="ddCough" name="ddCough" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
+                <select id="ddNausea" name="ddCough" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -317,22 +304,24 @@ span color for red astrict
             </div>
 
             <div class="row form-group">
-              <div id="wrap"style="text-align: center; white-space: nowrap" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="ddFever" class="col-sm-2 col-form-label">
+              <div class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
+                <label for="ddDiarrhea" class="col-sm-2 col-form-label">
                   <span>Diarrhea</span>
                 </label>
               </div>
 
-              <div id="wrapdd" class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
-                <select id="ddFever" name="ddFever" class="form-control">
+              <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">  
+                <select id="ddDiarrhea" name="ddFever" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
               </div>
             <!--If there is another symptom add it here and copy format from above-->
             </div>
-
           </fieldset>
+
+
+
 
           <!-- Part 3: Other questions-->
           <br>
@@ -355,7 +344,7 @@ span color for red astrict
                 </select>
               </div>
           
-              <div style="text-align: center;" class="col-lg-5 col-md-3 col-sm-6 col-xs-6" style="text-align: center;">
+              <div style="text-align: center;" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
                 <label for="ddDiagnosis" class="">
                   <span>Have you had a diagnosis of COVID-19 in the last 10 days?</span>
                 </label>
@@ -370,15 +359,16 @@ span color for red astrict
             </div>
 
 
-            <br><div class="row form-group">
+            <br>
+            <div class="row form-group">
               <div style="text-align: center;" class="col-lg-5 col-md-3 col-sm-6 col-xs-6"> <!--IF YES WHAT COUNTRIES-->
-                <label for="ddCountry" class="col-md-4 col-form-label">
+                <label for="ddTravelCountry" class="col-md-4 col-form-label">
                   <span>Have you travelled to any country in the last 14 days? If yes, what countries</span>
                 </label>
               </div>  
 
               <div class= "col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <select id="ddCountry" name="ddCountry" class="form-control">
+                <select id="ddTravelCountry" name="ddCountry" class="form-control">
                   <option value="No" selected>No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -386,13 +376,13 @@ span color for red astrict
 
 
               <div style="text-align: center;" class="col-lg-5 col-md-3 col-sm-6 col-xs-6">
-                <label for="txtCountry" class=form-control">
+                <label for="txtCountry">
                   <span>Which Countries? (seperate with comma)</span>
                 </label>
               </div>
 
-              <div class= "col-lg-1 col-md-1 col-sm-6 col-xs-6">
-                <input type"text" id="txtCountry" required class="form-control" placeholder="Country">          </div>
+              <div class= "col-lg-1 col-md-1 col-sm-6 col-xs-6">     
+                <input type="text" id="txtCountry" required class="form-control" placeholder="Country">
               </div>
             </div>
 
@@ -421,6 +411,8 @@ span color for red astrict
               <div class= "col-lg-1 col-md-1 col-sm-6 col-xs-6">
                   <input id="txtTemp" type="text" placeholder="98.8" name="txtTemp" class="form-control col-form-label"/>
               </div>
+            </div>
+
 
           </fieldset>
 

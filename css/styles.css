@@ -11,15 +11,3 @@ fieldset{
   line-height: 200px;
   text-align: center;
 }
-
-#wrap {
-  float: left;
-  position: relative;
-  left: -12%;
-}
-
-#wrapdd {
-  float: left;
-  position: relative;
-  left: -2.5%;
-}
