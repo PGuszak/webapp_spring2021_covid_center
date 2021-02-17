@@ -11,3 +11,15 @@ fieldset{
   line-height: 200px;
   text-align: center;
 }
+
+.center {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.centermain {
+  text-align: center;
+  white-space: nowrap;
+}
